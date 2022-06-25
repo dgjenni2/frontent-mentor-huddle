@@ -96,7 +96,7 @@ a:hover {
 	border-color: var(--soft-magenta);
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1060px) {
 	body {
 		background-size: cover;
 		background-image: url(./images/bg-desktop.svg);
