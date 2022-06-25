@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+	box-sizing: content-box;
+	margin: 0;
+}
+
+:root {
+	--violet: hsl(257, 40%, 49%);
+	--soft-magenta: hsl(300, 69%, 71%);
+	--white: #fff;
+	--black: #000;
+}
+
+body {
+	background-image: url(/images/bg-mobile.svg);
+	background-color: var(--violet);
+	background-repeat: no-repeat;
+	background-size: 100% 50%;
+	color: var(--white);
+}
+
+header {
+	margin: 2rem 0;
+}
+
+img {
+	max-width: 100%;
+	margin-bottom: 2em;
+}
+
+h1 {
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 1em;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+	margin-bottom: 0.5em;
+}
+
+section {
+	text-align: center;
+}
+
+.content {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.third-width {
+	max-width: 40%;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+a {
+	display: inline-block;
+	margin-bottom: 3rem;
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--soft-magenta);
+}
+
+.solid-button {
+	color: var(--violet);
+	background-color: var(--white);
+	border-radius: 4em;
+	padding: 0.8em 3em;
+	margin: 1em 0;
+}
+
+.solid-button:hover {
+	color: var(--white);
+	background-color: var(--soft-magenta);
+}
+
+.inverse-button {
+	color: var(--white);
+	background-color: var(--violet);
+	border: 2px var(--white) solid;
+	border-radius: 100%;
+	padding: 0.5rem;
+}
+
+.inverse-button:hover {
+	color: var(--soft-magenta);
+	border-color: var(--soft-magenta);
+}
+
+@media (min-width: 720px) {
+	body {
+		background-size: contain;
+		background-image: url(/images/bg-desktop.svg);
+	}
+
+	h1 {
+		font-size: 3rem;
+		margin: 1em 0;
+	}
+
+	p {
+		margin-bottom: 1em;
+	}
+
+	img {
+		margin-bottom: 2em;
+	}
+
+	section {
+		text-align: left;
+	}
+
+	.content {
+		width: 90%;
+	}
+
+	.flex {
+		display: flex;
+	}
+
+	.flex-end {
+		justify-content: end;
+	}
+
+	.col {
+		max-width: 45%;
+	}
+
+	.col + .col {
+		margin-left: 4em;
+	}
+
+	.item + .item {
+		margin-left: 1em;
+	}
+}
